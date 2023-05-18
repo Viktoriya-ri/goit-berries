@@ -42,12 +42,6 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 32px;
-  padding-right: 32px;
-
   outline: 2px solid green;
   outline-offset: -2px;
 }
@@ -85,7 +79,33 @@ button {
 .hero-section {
   background: var(--background-color);
 }
+.hero-container {
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+ 
 
+  background: var(--background-color);
+}
+.container {
+  min-width: 375px;
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 32px;
+  }
+}
 .btn-hero {
   position: relative;
   width: 80px;
@@ -97,8 +117,20 @@ button {
   color: var(--background-color);
 }
 .hero-img {
-  
-background: #FFFFFF;
-border-radius: 500px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 500px;
 }
-.hero-d
+.hero-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: var(--color-text);
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
