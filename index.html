@@ -34,57 +34,52 @@
       </div>
     </header>
     <main>
-<section class="hero-section section">
-  <div class="hero-container container">
+<section class="hero-section">
+  <div class="container">
     <h1 class="hero-title">
       FRESH HARVEST BOX IS YOUR 0NE-STOP PLACE FOR A DELICIOUS FRUIT BASKET
     </h1>
-
-    <button class="btn btn-hero" type="button">SHOP NOW</button>
-
     <ul class="hero-img-list list">
-      <li class="hero-img-r">
-        <img
-          class="hero-img-strawberry"
-          srcset="./img/hero/strawberry_mob@1x.webp 1x,
-           ../img/hero/strawberry_mob@2x.webp 2x,
-           ../img/hero/strawberry_tab@1x.webp 1x,
-           ../img/hero/strawberry_tab@2x.webp 2x,
-           ../img/hero/strawberry_desk@1x.webp 1x,
-           ../img/hero/strawberry_mdesk@2x.webp 2x"
-          src="./img/hero/strawberry_desk@1x.png"
-          alt="strawberry"
-        />
-      </li>
-      <li class="hero-img-l">
-        <img
-          class="hero-img-banana"
-          srcset="
-            ../img/hero/banana_mob@1x.webp  1x,
-            ../img/hero/banana_mob@2x.webp  2x,
-            ../img/hero/banana_tab@1x.webp  1x,
-            ../img/hero/banana_tab@2x.webp  2x,
-            ../img/hero/banana_desk@1x.webp 1x,
-            ../img/hero/banana_desk@2x.webp 2x
-          "
-          src="../img/hero/banana_desk@1x.png"
-          alt="banana"
-        />
-      </li>
-      <li>
-        <img
-          class="img-card"
-          srcset="
-            ../img/hero/young-ener-girl_mob@1x.webp 1x,
-            ../img/hero/young-ener-girl_mob@2x.webp 2x,
-            ../img/hero/young-ener-girl_td@1x.webp  1x,
-            ../img/hero/young-ener-girl_td@2x.webp  2x
-          "
-          src="../img/hero/young-ener-girl_td@1x.png"
-          alt="young-ener-girl"
-          width="452"
-          height="702"
-        />
+      <li class="img-card-list">
+        <div class="gradiend-border">
+          <a class="btn-hero" href="#Fruits">SHOP NOW</a>
+          <picture>
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/hero/young-energetic-woman_t@1x.webp 1x, ../img/hero/young-energetic-woman
+                _t@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/hero/young-energetic-woman_t@1x.jpg 1x, ../img/hero/young-energetic-woman
+                _t@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <!-- Mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="../img/hero/young-energetic-woman@1x.webp 1x, ../img/hero/young-energetic-woman
+                @2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="../img/hero/young-energetic-woman@1x.jpg 1x, ../img/hero/young-energetic-woman
+                @2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              class="card-img"
+              src="../img/hero/young-energetic-woman_td@1x.jpg"
+              alt="young woman"
+              width="452"
+              height="702"
+              loading="lazy"
+            />
+          </picture>
+        </div>
       </li>
     </ul>
     <p class="hero-desc">
@@ -92,47 +87,58 @@
       quality fruits available. Whether you are looking for a healthy snack or a
       gift for a loved one, Fresh Harvest Box has got you covered.
     </p>
-    <ul>
-      <li class="watermelon">
-        <h2>Fruit</h2>
-        <img
-          class="img-water"
-          srcset="
-            ../img/hero/watermelon_mtd@1x.webp 1x,
-            ../img/hero/watermelon_mtd@2x.webp 2x
-          "
-          src="../img/hero/watermelon_mtd@1x.png"
-          alt="watermelon"
-          width="239"
-          height="172"
-        />
+    <div class="watermelon">
+      <p class="hero-second">Fruit</p>
+      <img
+        class="img-water"
+        srcset="
+          ../img/hero/watermelon_mtd@1x.webp 1x,
+          ../img/hero/watermelon_mtd@2x.webp 2x
+        "
+        src="../img/hero/watermelon_mtd@1x.png"
+        alt="watermelon"
+        width="239"
+        height="172"
+      />
+      <p class="hero-text">
+        Refreshing and juicy, watermelon is the perfect summer treat and a great
+        source of hydration
+      </p>
+    </div>
+
+    <ul class="element-list">
+      <li class="hero-element">
+        <h3 class="hero-title-three">&#35;organic</h3>
       </li>
       <li class="hero-element">
-        <h3 class="hero-title-three"> &#35organic</h3>
+        <h3 class="hero-title-three">&#35;products5</h3>
       </li>
       <li class="hero-element">
-        <h3 class="hero-title-three"> &#35products5</h3>
+        <h3 class="hero-title-three">&#35;basket</h3>
       </li>
       <li class="hero-element">
-        <h3 class="hero-title-three"> &#35basket</h3>
+        <h3 class="hero-title-three">&#35;fruits</h3>
       </li>
-      <li class="hero-element">
-        <h3 class="hero-title-three"> &#35fruits</h3>
-      </li>
-      <li>
-        <h2>Fruit</h2>
-        <img
+    </ul>
+
+    <div class="basketstr">
+      <p class="hero-second">Fruit</p>
+      <img
         class="img-basketstr"
         srcset="
           ../img/hero/basketstr_mtd@1x.webp 1x,
-          ../img/hero/basketstr_mtd@2x.webp 2x"
+          ../img/hero/basketstr_mtd@2x.webp 2x
+        "
         src="../img/hero/basketstr_mtd@1x.png"
         alt="strawberry basket"
         width="239"
         height="187"
-       />
-      </li>
-    </ul>
+      />
+      <p class="hero-text">
+        Sweet and juicy, strawberries are packed with vitamin C and
+        antioxidants, making them a delicious and healthy snack
+      </p>
+    </div>
   </div>
 </section>
 
