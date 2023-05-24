@@ -49,12 +49,11 @@ button {
 .hero-section {
   background: var(--brand-color);
 }
+
 .hero-container {
   position: relative;
 }
-.hero-section {
-  background: var(--brand-color);
-}
+
 .hero-container {
   position: relative;
   background-image: url(../img/hero/strawberry_mob@1x.webp),
@@ -79,7 +78,7 @@ button {
     background-image: url(../img/hero/strawberry_tab@1x.webp),
       url(../img/hero/banana_tab@1x.webp);
     background-size: 108px, 132px;
-    background-position: top 55px right 37px, top 169px left 27px;
+    background-position: top 55px right 37px, top 169px left 66px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -224,22 +223,34 @@ button {
 }
 @media only screen and (min-width: 370px) and (max-width: 767px) {
   .gradiend-border {
-    max-width: 486px;
-    height: 496px;
+    max-width: 335px;
+    max-height: 509px;
   }
 }
 @media only screen and (min-width: 768px) {
   .gradiend-border {
-    max-width: 452px;
-    height: 677px;
+    max-width: 486px;
+    padding: 20px 17px;
+    margin-top: -45px;
+    margin-left: 133px;
   }
 }
-
+@media only screen and (min-width: 1280px) {
+  .gradiend-border {
+    margin-left: 397px;
+  }
+}
 .img-card {
+  max-width: 311px;
   background: var(--color-text);
   border-radius: 500px;
 }
-
+@media only screen and (min-width: 768px) {
+  .img-card {
+    max-width: 452px;
+    max-height: 702px;
+  }
+}
 .btn-hero {
   position: absolute;
   padding: 18px 15px;
@@ -283,14 +294,15 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .hero-desc {
-    margin-top: -110px;
+    margin-top: -13px;
     margin-left: 32px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .hero-desc {
     max-width: 222px;
-    margin-top: -574px;
+    margin-top: -516px;
+    margin-left: 54px;
   }
 }
 .watermelon {
@@ -350,14 +362,15 @@ button {
   max-width: 265px;
   max-height: 84px;
   margin: 24px 32px;
+
 }
 @media only screen and (min-width: 768px) {
   .hero-element-list {
-    width: 265px;
-    margin-top: -122px;
-    margin-left: 392px;
+    width: 266px;
+    gap: 12px 8px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .hero-element-list {
     margin-left: 918px;
@@ -372,6 +385,7 @@ button {
   margin-right: 5px;
   margin-bottom: 8px;
 }
+
 .hero-title-three {
   width: 61px;
   height: 14px;
@@ -412,3 +426,4 @@ button {
 .img-basketstr {
   padding-top: 24px;
 }
+
