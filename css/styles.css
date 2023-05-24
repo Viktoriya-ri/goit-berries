@@ -48,10 +48,59 @@ button {
 .hero-section {
   background: var(--brand-color);
   height: 1814px;
+.hero-section {
+  background: var(--brand-color);
+}
+.hero-container {
+  position: relative;
+  background-image: url(../img/hero/strawberry_mob@1x.webp),
+    url(../img/hero/banana_mob@1x.webp);
+  background-size: 56px, 66px;
+  background-position: top 56px right 20px, top 116px left 13px;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 375px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url(../img/hero/strawberry_mob@2x.webp),
+        url(../img/hero/banana_mob@2x.webp);
+    }
+  }
 }
 
-.hero-img-list {
-  padding-top: 100px;
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    background-image: url(../img/hero/strawberry_tab@1x.webp),
+      url(../img/hero/banana_tab@1x.webp);
+    background-size: 108px, 132px;
+    background-position: top 55px right 37px, top 169px left 27px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url(../img/hero/strawberry_tab@2x.webp),
+        url(../img/hero/banana_tab@2x.webp);
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    background-image: url(../img/hero/strawberry_desk@1x.webp),
+      url(../img/hero/banana_desk@1x.webp);
+    background-size: 120px, 183px;
+    background-position: top 39px right 223px, top 191px left 213px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url(../img/hero/strawberry_desk@2x.webp),
+        url(../img/hero/banana_desk@2x.webp);
+    }
+  }
 }
 .gradiend-border {
   width: 335px;
