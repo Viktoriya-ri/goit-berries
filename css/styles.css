@@ -51,6 +51,9 @@ button {
 .hero-section {
   background: var(--brand-color);
 }
+
+!--------------
+
 .hero-container {
   position: relative;
   background-image: url(../img/hero/strawberry_mob@1x.webp),
@@ -102,6 +105,9 @@ button {
     }
   }
 }
+
+!---------------------------------
+
 .gradiend-border {
   width: 335px;
   height: 509px;
